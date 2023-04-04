@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+--Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+--Neon-Green-Glow: hsl(150, 97%, 74%);
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+    background-color: var(--Dark-Blue);
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+.advice-card {
+    background-color: var(--Dark-Grayish-Blue);
+    width: 95vw;
+    max-width: 500px;
+    min-width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 50px hsl(216, 23%, 9%);
+    padding: 1.5rem 1.5rem 0;
+}
+
+.advice-card h1 {
+    color: var(--Neon-Green);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.advice-card h2 {
+    color: var(--Light-Cyan);
+    margin: 1.5rem 0;
+}
+
+.advice-card #divider {
+    width: 100%;
+}
+
+.advice-card .dice-button {
+    background-color: var(--Neon-Green);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    position: relative;
+    top: 1.5rem;
+    left: calc(50% - 1.5rem);
+    cursor: pointer;
+}
+
+.advice-card .dice-button:hover {
+    background-color: var(--Neon-Green-Glow);
+    box-shadow: 1px 1px 30px var(--Neon-Green-Glow);
+}
+
+.advice-card .dice-button img {
+    width: 100%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--Light-Cyan);
+}
+.attribution a { color: var(--Neon-Green); }
